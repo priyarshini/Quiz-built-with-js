@@ -1,0 +1,53 @@
+<html>
+    <title>
+      Quizess
+    </title>
+    <head>
+        <link rel="stylesheet" href="quizs.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    
+    <body>
+        <div class="container">
+           <h3 align="center">Welcome quizess!</h3>
+                <label for="username">Name </label>
+                <input type="text" placeholder="Enter your name" id="username" name="username">
+                <button type="submit" style="padding: 0px; width: 50px; height: 34px;" onclick="categoryPage();">Go</button>
+        </div>
+           
+        <div class="homebox custom hide">   
+            <h3 style="text-align: center;">Set up your Quiz !</h3>
+                <button onclick="startFlim();"><span>Flim </span></button> 
+                <button onclick="startMusic();"><span>Music </span></button><span>
+                <button onclick="startBooks();"><span> Books</span></button><span>
+                <button onclick="startSports();"><span>Sports </span></button><span>
+                <button onclick="startGames();"><span> Games </span></button>
+               
+        </div>
+            
+        <div class="quizbox custom hide">
+            <div class="questionNumber">
+                Questionnumber
+            </div>
+            <br>
+            <div class="questionText">
+                Here goes question
+            </div>
+            <div class="optioncontainer ">
+                Question's options
+            </div>
+            <div class="next-question-btn">
+                <button type="submit" style="width: 84px; height: 46px;position: relative;left: 85%;" onclick="next()">Next</button>
+            </div>
+        </div>
+
+        <div class="resultbox custom hide" style="position: relative;padding:90px 30px;top:25%;">
+            <h3><p class="totalscore"></p></h3>
+            <button style="width: 84px; height: 46px;position: relative;left:32%;top:74;" onclick="home()">Home</button>
+            <button style="width: 84px; height: 46px;position: relative;left:40%;top:74px;" onclick="exit()">Exit</button>
+        </div>
+     
+        <script src="quiz.js"></script>
+        
+    </body>
+</html>

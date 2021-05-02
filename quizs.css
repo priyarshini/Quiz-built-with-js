@@ -1,0 +1,101 @@
+.quizbox {
+ 
+  padding: 18px;
+}
+
+.quizbox .questionNumber {
+  font-size: 18px;
+  color: #000;
+ font-weight: 600;
+ border-bottom: 1px solid #ccc;
+ padding-bottom: 10px;
+ line-height: 25p;
+
+}
+
+.questionText{
+  font-weight: 600;
+  font-family: 'Lucida Sans Regular';
+  font-style: normal;
+  padding: 10px 10px ;
+
+}
+.option {
+   font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 16, 16);
+    cursor: pointer;
+    padding: 17px;
+    width: 96%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .quizbox .optioncontainer .option.correct::before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    padding: 18px;
+    background-color: rgba(0, 128, 0, 0.801);
+    z-index: -1;
+    animation: slideInleft .5s ease forwards;
+    color: white;
+  }
+  
+  .quizbox .optioncontainer .option.correct{
+    color: white;
+    background-color:  rgba(0, 128, 0, 0.801);
+  }
+
+  .quizbox .optioncontainer .option.incorrect::before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    padding: 18px;
+    background-color: rgba(212, 17, 17, 0.808);
+    color: white;
+    z-index: -1;
+    animation: slideInleft .5s ease forwards;
+  }
+  
+  .quizbox .optioncontainer .option.incorrect{
+    background-color: rgba(212, 17, 17, 0.808);
+    color: white;
+  }
+  .active, .option:hover {
+    background-color: #ccc; 
+  }
+
+  .quizbox .optioncontainer .option.already-answered{
+    pointer-events: none;
+  }
+
+  .resultbox{
+    position: relative;
+    padding:90px 30px;
+    top:25%;
+    background-image: url("./popper.gif")
+  }
+
+  .hide{display:none;}
+
+  .custom {
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+   }
