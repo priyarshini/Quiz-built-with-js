@@ -24,26 +24,18 @@ html, body {
 }
 
 p{
-    padding: 30px 30px;
-    position: fixed;
-    top: 60%;
-    left: 40%;
-    margin-top: -140px;
-    margin-left: -170px;
-	background: rgba(255, 254, 254, 0.74);
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    padding: 5px ;
+    background: rgba(255, 254, 254, 0.863);
+    text-align: center;
+    
 }
 
 .homebox {
-    position: fixed;
-    top: 53%;
-    left: 36%;
-    margin-top: -140px;
-    margin-left: -170px;
+    position: relative;
+    max-width:21%;
+    top:10%;
 	background: rgb(255, 255, 255);
-    border-radius: 5px;
-    
+    padding: 10px 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
 	
 
@@ -64,7 +56,10 @@ h3{
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size :20px;
 }
-
+h4{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size :15px;
+}
 input {
     font-family: serif;
     font-style: normal;
@@ -80,7 +75,7 @@ input[type=text] {
     margin-left: 18px;
     width: 290px;
     height: 35px;
-	border: 1px solid #c7d0d2;
+    border: 1px solid #c7d0d2;
     border-radius: 2px;
     box-shadow: inset 0 1.5px 3px rgba(238, 231, 231, 0.918), 0 0 0 5px #f5f7f8;
    -webkit-transition: all .4s ease;
@@ -93,6 +88,24 @@ input[type=text]:hover {
     box-shadow: inset 0 1.5px 3px rgba(255, 255, 255, 0.7), 0 0 0 5px #f5f7f8;
 }
 
+input[type=number] {
+    color: rgb(7, 7, 7);
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 47px;
+    width:50%;
+    text-align-last: center;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    box-shadow: inset 0 1.5px 3px rgba(238, 231, 231, 0.918), 0 0 0 5px #f5f7f8;
+   -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .4s ease;
+}
+
 input[type=text]:focus {
     border: 1px solid #e0e0e098;
     box-shadow: inset 0 1.5px 3px rgb(218, 211, 211), 0 0 0 5px #f6f7f8f1;
@@ -101,7 +114,7 @@ input[type=text]:focus {
 
 button {
     border-radius: 4px;
-    background-color: #2b2625;
+    background-color: #0f0f0f;
     border: none;
     color: rgb(241, 235, 235);
     text-align: center;
@@ -113,27 +126,6 @@ button {
     margin: 5px;
 }
   
-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-  
-button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-  
-button:hover span {
-    padding-right: 25px;
-}
-  
-button:hover span:after {
-    opacity: 1;
-    right: 0;
+button:hover  {
+    background-color: rgb(32, 31, 31);
 }
